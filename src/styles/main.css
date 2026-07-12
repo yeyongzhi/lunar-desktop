@@ -4,3 +4,23 @@ html, body, #app {
     width: 100dvw;
     height: 100dvh;
 }
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-size: 1rem;
+    line-height: 1;
+}
+
+/* ===== 全局边框颜色 =====
+   让所有元素默认使用 NaiveUI 主题的边框颜色，
+   支持亮色/暗色主题自动切换。
+   如需覆盖，直接在元素上设置 border-color 即可。
+*/
+*,
+*::before,
+*::after {
+    border-color: var(--n-border-color, var(--border-color, #e0e0e0));
+}

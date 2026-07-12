@@ -5,8 +5,8 @@ const { dateTime } = useDateTime();
 </script>
 
 <template>
-    <div class="w-full flex gap-x-4 items-center justify-between text-base">
-        <div class="flex items-center font-bold">
+    <div class="w-full flex gap-x-4 items-center justify-between">
+        <div class="flex items-center">
             {{ dateTime.date }}
             <span class="mx-2">·</span>
             {{ dateTime.weekDay }}
