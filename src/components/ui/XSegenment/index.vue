@@ -5,7 +5,7 @@ export interface SegmentOption {
     disabled?: boolean
 }
 
-const props = withDefaults(
+withDefaults(
     defineProps<{
         /** v-model 当前选中值 */
         modelValue?: string | number
